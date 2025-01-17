@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Pedro Lazzaroni</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-800 font-roboto">
+    <header class="bg-black p-4 fixed w-full top-0 flex justify-between items-center">
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400">Sobre</a></li>
+                <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400">Projetos</a></li>
+                <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="sobre" class="flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-16">
+        <img src="logo2.png" alt="Logo" class="h-auto max-w-lg">
+        <div class="intro-text mt-8 md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
+            <h1 class="text-6xl font-bold mb-4 text-white">
+                <span class="block">EU SOU</span>
+                <span class="block text-orange-400">PEDRO LAZZARONI</span>
+            </h1>
+            <div class="flex items-center space-x-4">
+                <p class="text-xl text-white">Desenvolvedor Web e Entusiasta de Tecnologia</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="perfil" class="flex justify-center items-center p-8">
+        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg">
+            <h2 class="text-3xl mb-4">Sobre Mim</h2>
+            <p class="text-lg mb-2 text-white">Estagiário de TI | Estudante de Sistemas de Informação na UEMG | Laravel | HTML5 | CSS3 | MySQL | IA | Sou DIO Campus Expert</p>
+            <p class="text-lg mb-2 text-white">VA Sistemas</p>
+            <p class="text-lg text-white">Universidade do Estado de Minas Gerais<br>Pedra Dourada, Minas Gerais, Brasil</p>
+            <p class="text-lg">Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.</p>
+        </div>
+    </section>
+    
+    <section id="projetos" class="flex flex-col items-center p-8">
+        <h2 class="text-3xl mb-4 text-white">Projetos Recentes</h2>
+        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+            <h3 class="text-2xl mb-2">LazzHub</h3>
+            <p class="text-lg">Uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial. Desenvolvido com Laravel e estilizado com Tailwind CSS, o LazzHub é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br" target="_blank" rel="noopener noreferrer" class="underline">pedrolazzaroni.com.br</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.</p>
+        </div>
+    </section>
+    
+    <section id="habilidades" class="flex justify-center items-center p-8">
+        <h2 class="text-3xl mb-4 text-white">Habilidades Técnicas</h2>
+        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
+            <h3 class="text-2xl mb-2">Linguagens de Programação</h3>
+            <p class="text-lg">JavaScript, PHP, HTML, CSS</p>
+            <h3 class="text-2xl mb-2 mt-4">Frameworks</h3>
+            <p class="text-lg">Laravel, Tailwind CSS</p>
+            <h3 class="text-2xl mb-2 mt-4">Ferramentas</h3>
+            <p class="text-lg">Git, GitHub</p>
+            <h3 class="text-2xl mb-2 mt-4">Outras Competências</h3>
+            <p class="text-lg">Design Responsivo, Integração de APIs, Desenvolvimento Full Stack</p>
+        </div>
+    </section>
+    
+    <section id="contato" class="flex justify-center items-center p-8">
+        <h2 class="text-3xl mb-4 text-white">Contato</h2>
+        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg">
+            <ul class="space-y-2">
+                <li><a href="https://linkedin.com/in/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline">LinkedIn</a></li>
+                <li><a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a></li>
+                <li>Email: <a href="mailto:seuemail@exemplo.com" class="underline">seuemail@exemplo.com</a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <footer class="bg-orange-500 text-white text-center p-4 mt-8">
+        <p>&copy; 2023 Pedro Lazzaroni. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
