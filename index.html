@@ -48,13 +48,26 @@
         </div>
     </section>
     
-    <section id="projetos" class="flex flex-col items-center p-8">
-        <h2 class="text-3xl mb-4 text-white">Projetos Recentes</h2>
-        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
-            <h3 class="text-2xl mb-2">LazzHub</h3>
-            <p class="text-lg">Uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial. Desenvolvido com Laravel e estilizado com Tailwind CSS, o LazzHub é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br" target="_blank" rel="noopener noreferrer" class="underline">pedrolazzaroni.com.br</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.</p>
+    <section id="projetos" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
+    <!-- Left side: LazzHub Description -->
+    <div class="w-full md:w-1/2 p-4 text-justify text-white h-screen flex items-center">
+        <div class="p-8">
+            <h3 class="text-5xl font-bold mb-6 text-orange-400">LazzHub</h3>
+            <p class="text-2xl text-white">
+                Uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial. Desenvolvido com Laravel e estilizado com Tailwind CSS, o LazzHub é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br" target="_blank" rel="noopener noreferrer" class="underline">pedrolazzaroni.com.br</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline">GitHub</a>.
+            </p>
         </div>
-    </section>
+    </div>
+    
+    <!-- Right side: Image Slider -->
+    <div class="w-full md:w-1/2 h-screen flex items-center mr-4">
+        <div class="w-full h-full flex justify-center items-center relative p-4">
+            <img src="lazzhub.png" alt="LazzHub" class="w-full h-full object-contain rounded-md absolute transition-opacity duration-500 opacity-100" id="sliderImage">
+            <img src="lazzhub2.png" alt="LazzHub 2" class="w-full h-full object-contain rounded-md absolute transition-opacity duration-500 opacity-0">
+            <img src="lazzhub3.png" alt="LazzHub 3" class="w-full h-full object-contain rounded-md absolute transition-opacity duration-500 opacity-0">
+        </div>
+    </div>
+</section>
     
     <section id="habilidades" class="flex justify-center items-center p-8">
         <h2 class="text-3xl mb-4 text-white">Habilidades Técnicas</h2>
