@@ -8,35 +8,44 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    
     const sliderImages = document.querySelectorAll('#projetos img');
     let currentImage = 0;
     const totalImages = sliderImages.length;
     let sliderInterval;
 
-    const showImage = (index) => {
-        sliderImages.forEach((img, i) => {
-            img.style.opacity = i === index ? '1' : '0';
+    const hideImage = (index) => {
+        return new Promise((resolve) => {
+            sliderImages[index].style.transform = 'translateX(100%)';
+            sliderImages[index].style.opacity = '0';
+            setTimeout(resolve, 500); // Wait for transition to complete
         });
     };
 
-    const nextImage = () => {
+    const showImage = (index) => {
+        sliderImages.forEach((img, i) => {
+            if (i === index) {
+                img.style.transform = 'translateX(0)';
+                img.style.opacity = '1';
+            } else if (i !== currentImage) {
+                img.style.transform = 'translateX(100%)';
+                img.style.opacity = '0';
+            }
+        });
+    };
+
+    const nextImage = async () => {
+        await hideImage(currentImage);
         currentImage = (currentImage + 1) % totalImages;
         showImage(currentImage);
     };
 
-    // Start automatic slider
     const startSlider = () => {
-        sliderInterval = setInterval(nextImage, 2000);
+        sliderInterval = setInterval(nextImage, 3000);
     };
 
-    // Stop automatic slider
     const stopSlider = () => {
         clearInterval(sliderInterval);
     };
-    nextImage();
-    stopSlider();
-    startSlider();
 
     showImage(currentImage);
     startSlider();
