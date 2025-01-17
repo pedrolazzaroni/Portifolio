@@ -7,38 +7,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-gray-800 font-roboto">
-    <header class="bg-black p-4 fixed w-full top-0 flex justify-between items-center">
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400">Sobre</a></li>
-                <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400">Projetos</a></li>
-                <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400">Contato</a></li>
+<body class=" bg-gray-900 font-roboto">
+    <header class="bg-black/70 backdrop-blur-sm p-6 fixed w-full top-0 flex justify-between items-center z-50">
+        <nav class="ml-auto">
+            <ul class="flex space-x-8">
+                <li><a href="#home" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Home</a></li>
+                <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Sobre</a></li>
+                <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Projetos</a></li>
+                <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Contato</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="sobre" class="flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-16">
-        <img src="logo2.png" alt="Logo" class="h-auto max-w-lg">
-        <div class="intro-text mt-8 md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
-            <h1 class="text-6xl font-bold mb-4 text-white">
+    <section id="home" class="flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
+        <img src="logo3.png" alt="Logo" class="h-auto max-w-lg rounded-full">
+        <div class="intro-text md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
+            <h1 class="text-8xl font-bold mb-6 text-white mr-32">
                 <span class="block">EU SOU</span>
-                <span class="block text-orange-400">PEDRO LAZZARONI</span>
+                <span class="block text-orange-400">PEDRO</span>
+                <span class="block text-orange-400">LAZZARONI</span>
             </h1>
-            <div class="flex items-center space-x-4">
-                <p class="text-xl text-white">Desenvolvedor Web e Entusiasta de Tecnologia</p>
+            <div class="flex items-center space-x-6">
+                <p class="text-xl mb-4 text-white">Desenvolvedor Web e Entusiasta de Tecnologia</p>
             </div>
         </div>
     </section>
     
     
-    <section id="perfil" class="flex justify-center items-center p-8">
-        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-3xl mb-4">Sobre Mim</h2>
-            <p class="text-lg mb-2 text-white">Estagiário de TI | Estudante de Sistemas de Informação na UEMG | Laravel | HTML5 | CSS3 | MySQL | IA | Sou DIO Campus Expert</p>
-            <p class="text-lg mb-2 text-white">VA Sistemas</p>
-            <p class="text-lg text-white">Universidade do Estado de Minas Gerais<br>Pedra Dourada, Minas Gerais, Brasil</p>
-            <p class="text-lg">Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.</p>
+    <section id="sobre" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
+
+        <div class="w-full md:w-1/2 flex justify-center items-center relative z-0">
+            <img src="./pc2.jpeg" alt="Imagem" class="w-full h-full object-cover border-black rounded-lg transform scale-150">
+        </div>
+        
+        <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-start relative z-10 p-12">
+            <h2 class="text-5xl font-bold mb-6 text-orange-400">DESENVOLVEDOR</h2>
+            <p class="text-2xl text-white">
+                Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.
+            </p>
         </div>
     </section>
     
