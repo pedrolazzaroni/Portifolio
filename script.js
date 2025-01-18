@@ -52,24 +52,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('[data-skill]').forEach(element => {
         const skill = element.getAttribute('data-skill');
-        const relatedSVG = document.querySelector(`div[data-skill="${skill}"] img`);
+        const relatedDiv = document.querySelector(`div[data-skill="${skill}"]`);
         const relatedWord = document.querySelector(`span[data-skill="${skill}"]`);
 
-        if (relatedSVG && relatedWord) {
-            // When hovering over the word, enlarge the SVG
+        if (relatedDiv && relatedWord) {
+            // When hovering over the word, add shadow to the SVG container div
             relatedWord.addEventListener('mouseenter', () => {
-                relatedSVG.classList.add('scale-110');
+                relatedDiv.classList.add('shadow-lg', 'shadow-orange-500');
+                relatedDiv.style.boxShadow = '0 0 10px 5px orange';
+                relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
+                relatedDiv.style.transform = 'scale(1.1)';
             });
             relatedWord.addEventListener('mouseleave', () => {
-                relatedSVG.classList.remove('scale-110');
+                relatedDiv.classList.remove('shadow-lg', 'shadow-orange-500');
+                relatedDiv.style.boxShadow = 'none';
+                relatedDiv.style.transition = 'box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out';
+                relatedDiv.style.transform = 'scale(1)';
             });
 
-            // When hovering over the SVG, enlarge the word
-            relatedSVG.addEventListener('mouseenter', () => {
-                relatedWord.classList.add('text-4xl');
+            // When hovering over the SVG container div, add text shadow to the word
+            relatedDiv.addEventListener('mouseenter', () => {
+                relatedWord.classList.add('text-shadow-lg', 'text-shadow-orange-500');
             });
-            relatedSVG.addEventListener('mouseleave', () => {
-                relatedWord.classList.remove('text-4xl');
+            relatedDiv.addEventListener('mouseleave', () => {
+                relatedWord.classList.remove('text-shadow-lg', 'text-shadow-orange-500');
             });
         }
     });
