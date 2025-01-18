@@ -49,4 +49,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     showImage(currentImage);
     startSlider();
+
+    document.querySelectorAll('[data-skill]').forEach(element => {
+        const skill = element.getAttribute('data-skill');
+        const relatedSVG = document.querySelector(`div[data-skill="${skill}"] img`);
+        const relatedWord = document.querySelector(`span[data-skill="${skill}"]`);
+
+        if (relatedSVG && relatedWord) {
+            // When hovering over the word, enlarge the SVG
+            relatedWord.addEventListener('mouseenter', () => {
+                relatedSVG.classList.add('scale-110');
+            });
+            relatedWord.addEventListener('mouseleave', () => {
+                relatedSVG.classList.remove('scale-110');
+            });
+
+            // When hovering over the SVG, enlarge the word
+            relatedSVG.addEventListener('mouseenter', () => {
+                relatedWord.classList.add('text-4xl');
+            });
+            relatedSVG.addEventListener('mouseleave', () => {
+                relatedWord.classList.remove('text-4xl');
+            });
+        }
+    });
 });
