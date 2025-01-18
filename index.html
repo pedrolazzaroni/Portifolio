@@ -6,8 +6,22 @@
     <title>Portfólio de Pedro Lazzaroni</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Add Fade-In-Up Animation Styles -->
+    <style>
+        .fade-in-element {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .fade-in-element.fade-in-up {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
 </head>
-<body class=" bg-gray-900 font-roboto">
+<body class=" bg-black font-roboto">
     <header class="bg-black/70 backdrop-blur-sm p-6 fixed w-full top-0 flex justify-between items-center z-50">
         <nav class="ml-auto">
             <ul class="flex space-x-8">
@@ -20,7 +34,7 @@
         </nav>
     </header>
     
-    <section id="home" class="flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
+    <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
         <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-lg rounded-full">
         <div class="intro-text md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
             <h1 class="text-8xl font-bold mb-6 text-white mr-32">
@@ -35,7 +49,7 @@
     </section>
     
     
-    <section id="sobre" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
+    <section id="sobre" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
 
         <div class="w-full md:w-1/2 flex justify-center items-center relative z-0">
             <img src="./assets/images/pc2.jpeg" alt="Imagem" class="w-full h-full object-cover border-black rounded-lg transform scale-150">
@@ -49,7 +63,7 @@
         </div>
     </section>
     
-    <section id="projetos" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
+    <section id="projetos" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
     <!-- Left side: LazzHub Description -->
     <div class="w-full md:w-1/2 p-4 text-justify text-white h-screen flex items-center">
         <div class="p-8">
@@ -70,7 +84,7 @@
     </div>
 </section>
     
-<section id="habilidades" class="flex flex-col md:flex-row justify-center items-center h-screen p-8 bg-gradient-to-b to-gray-900 from-black">
+<section id="habilidades" class="fade-in-element flex flex-col md:flex-row justify-center items-center h-screen p-8 bg-gradient-to-b to-gray-900 from-black">
     <div class="w-full md:w-1/2 flex flex-col items-center space-y-4 mb-8 md:mb-0">
         <div class="flex justify-center">
             <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="php">
@@ -122,7 +136,7 @@
     </div>
 </section>
     
-<section id="contato" class="relative flex flex-col md:flex-row justify-center items-center p-8 min-h-screen bg-black">
+<section id="contato" class="fade-in-element relative flex flex-col md:flex-row justify-center items-center p-8 min-h-screen bg-black">
 
     <!-- Contact Image Background -->
     <div class="absolute left-0  w-full h-full z-0">
