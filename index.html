@@ -21,7 +21,7 @@
     </header>
     
     <section id="home" class="flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
-        <img src="logo3.png" alt="Logo" class="h-auto max-w-lg rounded-full">
+        <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-lg rounded-full">
         <div class="intro-text md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
             <h1 class="text-8xl font-bold mb-6 text-white mr-32">
                 <span class="block">EU SOU</span>
@@ -38,7 +38,7 @@
     <section id="sobre" class="flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
 
         <div class="w-full md:w-1/2 flex justify-center items-center relative z-0">
-            <img src="./pc2.jpeg" alt="Imagem" class="w-full h-full object-cover border-black rounded-lg transform scale-150">
+            <img src="./assets/images/pc2.jpeg" alt="Imagem" class="w-full h-full object-cover border-black rounded-lg transform scale-150">
         </div>
         
         <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-start relative z-10 p-12">
@@ -63,26 +63,54 @@
     <!-- Right side: Image Slider -->
     <div class="w-full md:w-1/2 h-screen flex items-center mr-4 overflow-hidden">
         <div class="w-full h-full flex justify-center items-center relative p-4">
-            <img src="lazzhub.png" alt="LazzHub" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0" id="sliderImage">
-            <img src="lazzhub2.png" alt="LazzHub 2" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0">
-            <img src="lazzhub3.png" alt="LazzHub 3" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0">
+            <img src="./assets/images/lazzhub.png" alt="LazzHub" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0" id="sliderImage">
+            <img src="./assets/images/lazzhub2.png" alt="LazzHub 2" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0">
+            <img src="./assets/images/lazzhub3.png" alt="LazzHub 3" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0">
         </div>
     </div>
 </section>
     
-    <section id="habilidades" class="flex justify-center items-center p-8">
-        <h2 class="text-3xl mb-4 text-white">Habilidades Técnicas</h2>
-        <div class="card bg-indigo-600 text-white p-6 rounded-lg shadow-lg w-full max-w-4xl">
-            <h3 class="text-2xl mb-2">Linguagens de Programação</h3>
-            <p class="text-lg">JavaScript, PHP, HTML, CSS</p>
-            <h3 class="text-2xl mb-2 mt-4">Frameworks</h3>
-            <p class="text-lg">Laravel, Tailwind CSS</p>
-            <h3 class="text-2xl mb-2 mt-4">Ferramentas</h3>
-            <p class="text-lg">Git, GitHub</p>
-            <h3 class="text-2xl mb-2 mt-4">Outras Competências</h3>
-            <p class="text-lg">Design Responsivo, Integração de APIs, Desenvolvimento Full Stack</p>
+<section id="habilidades" class="flex flex-col md:flex-row justify-center items-center h-screen p-8 bg-gradient-to-b to-gray-900 from-black">
+    <div class="w-full md:w-1/2 flex flex-col items-center space-y-4 mb-8 md:mb-0">
+        <div class="flex justify-center">
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/php.svg" alt="PHP" class="w-24 h-24">
+            </div>
         </div>
-    </section>
+        <div class="flex justify-center space-x-8">
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/html.svg" alt="HTML5" class="w-24 h-24">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/css.svg" alt="CSS3" class="w-24 h-24">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/laravel.svg" alt="Laravel" class="w-24 h-24">
+            </div>
+        </div>
+        <div class="flex justify-center space-x-8">
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/tailwind.svg" alt="Tailwind CSS" class="w-24 h-24">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/mysql.svg" alt="MySQL" class="w-24 h-24">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/git.svg" alt="Git" class="w-24 h-24">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4">
+                <img src="./assets/svgs/github.svg" alt="GitHub" class="w-24 h-24">
+            </div>
+        </div>
+    </div>
+    
+    <div class="w-full md:w-1/2 p-4 text-justify text-white items-center ">
+        <h3 class="text-5xl font-bold mb-6 text-orange-400">Habilidades Técnicas</h3>
+        <p class="text-2xl text-white">
+            Experiência em desenvolvimento Full Stack com proficiência em <span class="font-bold text-orange-400">JavaScript</span>, <span class="font-bold text-orange-400">PHP</span>, <span class="font-bold text-orange-400">HTML</span> e <span class="font-bold text-orange-400">CSS</span>. Domínio do framework <span class="font-bold text-orange-400">Laravel</span> e <span class="font-bold text-orange-400">Tailwind</span> CSS, além de ferramentas como <span class="font-bold text-orange-400">Git</span> e <span class="font-bold text-orange-400">GitHub</span>. Competente em design responsivo e integração de <span class="font-bold text-orange-400">APIs</span>, entregando soluções completas e eficientes para aplicações web.
+        </p>
+    </div>
+</section>
     
     <section id="contato" class="flex justify-center items-center p-8">
         <h2 class="text-3xl mb-4 text-white">Contato</h2>
