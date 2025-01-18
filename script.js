@@ -56,22 +56,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const relatedWord = document.querySelector(`span[data-skill="${skill}"]`);
 
         if (relatedDiv && relatedWord) {
-            // When hovering over the word, add shadow to the SVG container div
+            // When hovering over the skill word
             relatedWord.addEventListener('mouseenter', () => {
-                relatedDiv.classList.add('shadow-lg', 'shadow-orange-500');
                 relatedDiv.style.boxShadow = '0 0 10px 5px orange';
                 relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
                 relatedDiv.style.transform = 'scale(1.1)';
+                relatedWord.style.boxShadow = '0 0 10px orange';
+                relatedWord.style.paddingLeft = '5px';
+                relatedWord.style.paddingRight = '5px';
+                relatedWord.style.borderRadius = '10px';
+                relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
             relatedWord.addEventListener('mouseleave', () => {
-                relatedDiv.classList.remove('shadow-lg', 'shadow-orange-500');
-                relatedDiv.style.boxShadow = 'none';
-                relatedDiv.style.transition = 'box-shadow 0.5s ease-in-out, transform 0.5s ease-in-out';
-                relatedDiv.style.transform = 'scale(1)';
+                relatedDiv.style.boxShadow = '';
+                relatedDiv.style.transform = '';
+                relatedWord.style.boxShadow = '';
+                relatedWord.style.paddingLeft = '';
+                relatedWord.style.paddingRight = '';
+                relatedWord.style.borderRadius = '';
             });
 
-            // When hovering over the SVG container div, add text shadow to the word
+            // When hovering over the SVG container div
             relatedDiv.addEventListener('mouseenter', () => {
+                relatedDiv.style.boxShadow = '0 0 10px 5px orange';
+                relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
+                relatedDiv.style.transform = 'scale(1.1)';
                 relatedWord.style.boxShadow = '0 0 10px orange';
                 relatedWord.style.paddingLeft = '5px';
                 relatedWord.style.paddingRight = '5px';
@@ -79,11 +88,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
             relatedDiv.addEventListener('mouseleave', () => {
-                relatedWord.style.boxShadow = 'none';
-                relatedWord.style.paddingLeft = '0';
-                relatedWord.style.paddingRight = '0';
-                relatedWord.style.borderRadius = '0';
-                relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
+                relatedDiv.style.boxShadow = '';
+                relatedDiv.style.transform = '';
+                relatedWord.style.boxShadow = '';
+                relatedWord.style.paddingLeft = '';
+                relatedWord.style.paddingRight = '';
+                relatedWord.style.borderRadius = '';
             });
         }
     });
