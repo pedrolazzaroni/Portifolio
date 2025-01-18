@@ -61,10 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 relatedDiv.style.boxShadow = '0 0 10px 5px orange';
                 relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
                 relatedDiv.style.transform = 'scale(1.1)';
-                relatedWord.style.boxShadow = '0 0 10px orange';
                 relatedWord.style.paddingLeft = '5px';
                 relatedWord.style.paddingRight = '5px';
                 relatedWord.style.borderRadius = '10px';
+                relatedWord.style.boxShadow = '0 0 10px orange';
                 relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
             relatedWord.addEventListener('mouseleave', () => {
@@ -81,10 +81,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 relatedDiv.style.boxShadow = '0 0 10px 5px orange';
                 relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
                 relatedDiv.style.transform = 'scale(1.1)';
-                relatedWord.style.boxShadow = '0 0 10px orange';
                 relatedWord.style.paddingLeft = '5px';
                 relatedWord.style.paddingRight = '5px';
                 relatedWord.style.borderRadius = '10px';
+                relatedWord.style.boxShadow = '0 0 10px orange';
                 relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
             relatedDiv.addEventListener('mouseleave', () => {
