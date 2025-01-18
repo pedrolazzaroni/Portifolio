@@ -72,10 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // When hovering over the SVG container div, add text shadow to the word
             relatedDiv.addEventListener('mouseenter', () => {
-                relatedWord.classList.add('text-shadow-lg', 'text-shadow-orange-500');
+                relatedWord.style.boxShadow = '0 0 10px orange';
+                relatedWord.style.paddingLeft = '5px';
+                relatedWord.style.paddingRight = '5px';
+                relatedWord.style.borderRadius = '10px';
+                relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
             relatedDiv.addEventListener('mouseleave', () => {
-                relatedWord.classList.remove('text-shadow-lg', 'text-shadow-orange-500');
+                relatedWord.style.boxShadow = 'none';
+                relatedWord.style.paddingLeft = '0';
+                relatedWord.style.paddingRight = '0';
+                relatedWord.style.borderRadius = '0';
+                relatedWord.style.transition = 'text-shadow 0.2s ease-in-out, padding-left 0.2s ease-in-out, padding-right 0.2s ease-in-out, border-radius 0.2s ease-in-out';
             });
         }
     });
