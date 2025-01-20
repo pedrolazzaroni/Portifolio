@@ -101,12 +101,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // Fade-In-Up Animation on Scroll
     const fadeInElements = document.querySelectorAll('.fade-in-element');
     const observerOptions = {
-        threshold: 0.1
+        threshold: 0.7, // Require 70% visibility
+        rootMargin: '0px'
     };
 
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting) {
+            if(entry.intersectionRatio >= 0.7) {
                 entry.target.classList.add('fade-in-up');
             } else {
                 entry.target.classList.remove('fade-in-up');
