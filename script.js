@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const relatedWord = document.querySelector(`span[data-skill="${skill}"]`);
 
         if (relatedDiv && relatedWord) {
-            // When hovering over the skill word
+            // Quando passar o mouse sobre a palavra da habilidade
             relatedWord.addEventListener('mouseenter', () => {
                 relatedDiv.style.boxShadow = '0 0 10px 5px orange';
                 relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 relatedWord.style.borderRadius = '';
             });
 
-            // When hovering over the SVG container div
+            // Quando passar o mouse sobre o contêiner SVG
             relatedDiv.addEventListener('mouseenter', () => {
                 relatedDiv.style.boxShadow = '0 0 10px 5px orange';
                 relatedDiv.style.transition = 'box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out';
@@ -98,26 +98,33 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Fade-In-Up Animation on Scroll
+    // Definição da variável fadeInElements
     const fadeInElements = document.querySelectorAll('.fade-in-element');
-    const observerOptions = {
-        threshold: 0.7, // Require 70% visibility
-        rootMargin: '0px'
-    };
 
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if(entry.intersectionRatio >= 0.7) {
-                entry.target.classList.add('fade-in-up');
-            } else {
-                entry.target.classList.remove('fade-in-up');
-            }
+    if (window.matchMedia('(min-width: 768px)').matches) {
+        const observerOptions = {
+            threshold: 0.7, // Requer 70% de visibilidade
+            rootMargin: '0px'
+        };
+
+        const observerCallback = (entries, observer) => {
+            entries.forEach(entry => {
+                if(entry.intersectionRatio >= 0.7) {
+                    entry.target.classList.add('fade-in-up');
+                } else {
+                    entry.target.classList.remove('fade-in-up');
+                }
+            });
+        };
+
+        const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+        fadeInElements.forEach(element => {
+            observer.observe(element);
         });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    fadeInElements.forEach(element => {
-        observer.observe(element);
-    });
+    } else {
+        fadeInElements.forEach(element => {
+            element.classList.add('fade-in-up');
+        });
+    }
 });

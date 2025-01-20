@@ -7,7 +7,6 @@
     <link rel="icon" href="assets/favicon/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
     <style>
         .fade-in-element {
             opacity: 0;
@@ -34,45 +33,43 @@
         </nav>
     </header>
     
-    <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
-        <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-lg rounded-full transition duration-300 transform hover:shadow-orange-400 hover:scale-110">
-        <div class="intro-text md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
-            <h1 class="text-7xl font-bold mb-6 text-white mr-32">
+    <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-4 md:p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
+        <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-xs md:max-w-lg rounded-full transition duration-300 transform hover:shadow-orange-400 hover:scale-110">
+        <div class="intro-text mt-4 md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 md:mb-6 text-white mr-0 md:mr-32">
                 <span class="block">EU SOU</span>
-                <span class="block text-orange-400 text-9xl">PEDRO</span>
-                <span class="block text-orange-400 text-9xl">LAZZARONI</span>
+                <span class="block text-orange-400 text-5xl md:text-9xl">PEDRO</span>
+                <span class="block text-orange-400 text-5xl md:text-9xl">LAZZARONI</span>
             </h1>
-            <div class="flex items-center space-x-6">
-                <p class="text-xl mb-4 text-white">Desenvolvedor e Entusiasta de Tecnologia</p>
+            <div class="flex items-center space-x-4 md:space-x-6">
+                <p class="text-lg md:text-xl mb-2 md:mb-4 text-white">Desenvolvedor e Entusiasta de Tecnologia</p>
             </div>
         </div>
     </section>
-    
-    
-    <section id="sobre" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
+    <section id="sobre" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative p-4 md:p-0">
 
-        <div class="w-full md:w-1/2 flex justify-center items-center relative z-0">
-            <img src="./assets/images/pc2.jpeg" alt="Imagem" class="w-full h-full object-cover border-black rounded-lg transform scale-150">
+        <div class="w-full md:w-1/2 flex justify-center items-center relative md:static z-0">
+            <img src="./assets/images/pc2.jpeg" alt="Imagem" class="w-3/4 md:w-full h-auto object-cover border-black rounded-lg transform scale-100 md:scale-150 absolute md:relative -z-10">
         </div>
         
-        <div class="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-start relative z-10 p-12">
-            <h2 class="text-5xl font-bold mb-6 text-orange-400">DESENVOLVEDOR</h2>
-            <p class="text-2xl text-white">
+        <div class="w-full md:w-1/2 mt-4 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-start relative z-10 p-6 md:p-12">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-orange-400">DESENVOLVEDOR</h2>
+            <p class="text-lg md:text-2xl text-white">
                 Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.
             </p>
         </div>
     </section>
-    
-    <section id="projetos" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative">
-    <div class="w-full md:w-1/2 p-4 text-justify text-white h-screen flex items-center">
-        <div class="p-8">
-            <h3 class="text-5xl font-bold mb-6 text-orange-400">LazzHub</h3>
-            <p class="text-2xl text-white">
-                Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial <span class="text-orange-400 font-bold">Gemini</span>. Desenvolvido com Laravel e estilizado com Tailwind CSS, o <span class="text-orange-400 font-bold">LazzHub</span> é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">pedrolazzaroni.com.br/lazzhub</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">GitHub</a>.
-            </p>
+            
+    <section id="projetos" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-auto md:min-h-screen bg-black relative">
+        <div class="w-full md:w-1/2 p-2 md:p-4 text-justify text-white h-auto flex items-center">
+            <div class="p-4 md:p-8">
+                <h3 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-orange-400">LazzHub</h3>
+                <p class="text-lg md:text-2xl text-white">
+                    Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial <span class="text-orange-400 font-bold">Gemini</span>. Desenvolvido com Laravel e estilizado com Tailwind CSS, o <span class="text-orange-400 font-bold">LazzHub</span> é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br/lazzhub" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">pedrolazzaroni.com.br/lazzhub</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">GitHub</a>.
+                </p>
+            </div>
         </div>
-    </div>
-    
+        
     <div class="w-full md:w-1/2 h-screen flex items-center mr-4 overflow-hidden">
         <div class="w-full h-full flex justify-center items-center relative p-4">
             <img src="./assets/images/lazzhub.png" alt="LazzHub" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0" id="sliderImage">
@@ -82,43 +79,45 @@
     </div>
 </section>
     
-<section id="habilidades" class="fade-in-element flex flex-col md:flex-row justify-center items-center h-screen p-8 bg-gradient-to-b to-black from-gray-900">
-    <div class="w-full md:w-1/2 flex flex-col items-center space-y-4 mb-8 md:mb-0">
+<section id="habilidades" class="fade-in-element flex flex-col justify-center items-center p-4 bg-gradient-to-b to-black from-gray-900">
+    <div class="w-full flex flex-col items-center space-y-4 mb-8">
         <div class="flex justify-center">
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="php">
-                <img src="./assets/svgs/php.svg" alt="PHP" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="php">
+                <img src="./assets/svgs/php.svg" alt="PHP" class="w-16 h-16 transition-transform transition-shadow duration-300">
             </div>
         </div>
-        <div class="flex justify-center space-x-8">
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="html">
-                <img src="./assets/svgs/html.svg" alt="HTML5" class="w-24 h-24 transition-transform transition-shadow duration-300">
+        <div class="flex flex-col items-center space-y-4">
+            <div class="flex justify-center space-x-4">
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="html">
+                    <img src="./assets/svgs/html.svg" alt="HTML5" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="css">
+                    <img src="./assets/svgs/css.svg" alt="CSS3" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="laravel">
+                    <img src="./assets/svgs/laravel.svg" alt="Laravel" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
             </div>
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="css">
-                <img src="./assets/svgs/css.svg" alt="CSS3" class="w-24 h-24 transition-transform transition-shadow duration-300">
-            </div>
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="laravel">
-                <img src="./assets/svgs/laravel.svg" alt="Laravel" class="w-24 h-24 transition-transform transition-shadow duration-300">
-            </div>
-        </div>
-        <div class="flex justify-center space-x-8">
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="tailwind">
-                <img src="./assets/svgs/tailwind.svg" alt="Tailwind CSS" class="w-24 h-24 transition-transform transition-shadow duration-300">
-            </div>
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="javascript">
-                <img src="./assets/svgs/javascript.svg" alt="JavaScript" class="w-24 h-24 transition-transform transition-shadow duration-300">
-            </div>
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="git">
-                <img src="./assets/svgs/git.svg" alt="Git" class="w-24 h-24 transition-transform transition-shadow duration-300">
-            </div>
-            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="github">
-                <img src="./assets/svgs/github.svg" alt="GitHub" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            <div class="flex justify-center space-x-4">
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="tailwind">
+                    <img src="./assets/svgs/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="javascript">
+                    <img src="./assets/svgs/javascript.svg" alt="JavaScript" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="git">
+                    <img src="./assets/svgs/git.svg" alt="Git" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
+                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="github">
+                    <img src="./assets/svgs/github.svg" alt="GitHub" class="w-16 h-16 transition-transform transition-shadow duration-300">
+                </div>
             </div>
         </div>
     </div>
     
-    <div class="w-full md:w-1/2 p-6 text-justify text-white items-center">
-        <h3 class="text-5xl font-bold mb-6 text-orange-400">Habilidades Técnicas</h3>
-        <p class="text-2xl text-white">
+    <div class="w-full p-4 text-justify text-white items-center">
+        <h3 class="text-3xl font-bold mb-4 text-orange-400">Habilidades Técnicas</h3>
+        <p class="text-xl text-white">
             Experiência em desenvolvimento Full Stack com proficiência em 
             <span class="font-bold text-orange-400 cursor-pointer" data-skill="javascript">JavaScript</span>, 
             <span class="font-bold text-orange-400 cursor-pointer" data-skill="php">PHP</span>, 
