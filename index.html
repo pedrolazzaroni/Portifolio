@@ -33,10 +33,10 @@
         </nav>
     </header>
     
-    <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-4 md:p-8 mt-8 bg-gradient-to-b to-black from-gray-900">
+    <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-4 md:p-8 mt-8 bg-gradient-to-b to-black from-gray-900 text-center md:text-left">
         <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-xs md:max-w-lg rounded-full transition duration-300 transform hover:shadow-orange-400 hover:scale-110">
-        <div class="intro-text mt-4 md:mt-0 md:ml-8 text-center md:text-left flex flex-col justify-center items-start">
-            <h1 class="text-4xl md:text-7xl font-bold mb-4 md:mb-6 text-white mr-0 md:mr-32">
+        <div class="intro-text mt-4 md:mt-0 md:ml-8 flex flex-col justify-center items-center md:items-start">
+            <h1 class="text-4xl md:text-7xl font-bold mb-4 md:mb-6 text-white">
                 <span class="block">EU SOU</span>
                 <span class="block text-orange-400 text-5xl md:text-9xl">PEDRO</span>
                 <span class="block text-orange-400 text-5xl md:text-9xl">LAZZARONI</span>
@@ -46,13 +46,13 @@
             </div>
         </div>
     </section>
-    <section id="sobre" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative p-4 md:p-0">
+    <section id="sobre" class="fade-in-element flex flex-col md:flex-row items-center justify-center min-h-screen bg-black relative p-4 md:p-0 mt-28 md:mt-0">
 
         <div class="w-full md:w-1/2 flex justify-center items-center relative md:static z-0">
             <img src="./assets/images/pc2.jpeg" alt="Imagem" class="w-3/4 md:w-full h-auto object-cover border-black rounded-lg transform scale-100 md:scale-150 absolute md:relative -z-10">
         </div>
         
-        <div class="w-full md:w-1/2 mt-4 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-start relative z-10 p-6 md:p-12">
+        <div class="w-full md:w-1/2 mt-12 md:mt-0 md:ml-8 text-justify flex flex-col justify-center items-center md:items-start relative z-10 p-6 md:p-12">
             <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-orange-400">DESENVOLVEDOR</h2>
             <p class="text-lg md:text-2xl text-white">
                 Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.
@@ -65,12 +65,12 @@
             <div class="p-4 md:p-8">
                 <h3 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-orange-400">LazzHub</h3>
                 <p class="text-lg md:text-2xl text-white">
-                    Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial <span class="text-orange-400 font-bold">Gemini</span>. Desenvolvido com Laravel e estilizado com Tailwind CSS, o <span class="text-orange-400 font-bold">LazzHub</span> é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br/lazzhub" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">pedrolazzaroni.com.br/lazzhub</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">GitHub</a>.
+                    Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial <span class="text-orange-400 font-bold">Gemini</span>. Desenvolvido com Laravel e estilizado com Tailwind CSS, o <span class="text-orange-400 font-bold">LazzHub</span> é totalmente responsivo e está disponível para acesso em <a href="https://pedrolazzaroni.com.br/" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">pedrolazzaroni.com.br/lazzhub</a>. O código-fonte pode ser encontrado no meu <a href="https://github.com/pedrolazzaroni" target="_blank" rel="noopener noreferrer" class="underline text-orange-400 font-bold">GitHub</a>.
                 </p>
             </div>
         </div>
         
-    <div class="w-full md:w-1/2 h-screen flex items-center mr-4 overflow-hidden">
+    <div class="w-full md:w-1/2 h-screen flex items-center p-4 overflow-hidden mt-[-80px] md:mt-0 ">
         <div class="w-full h-full flex justify-center items-center relative p-4">
             <img src="./assets/images/lazzhub.png" alt="LazzHub" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0" id="sliderImage">
             <img src="./assets/images/lazzhub2.png" alt="LazzHub 2" class="w-full h-full object-contain rounded-lg absolute transition-transform duration-700 ease-in-out opacity-0">
@@ -79,45 +79,43 @@
     </div>
 </section>
     
-<section id="habilidades" class="fade-in-element flex flex-col justify-center items-center p-4 bg-gradient-to-b to-black from-gray-900">
-    <div class="w-full flex flex-col items-center space-y-4 mb-8">
+<section id="habilidades" class="fade-in-element flex flex-col md:flex-row justify-center items-center h-screen p-8 bg-gradient-to-b to-black from-gray-900">
+    <div class="hidden md:flex w-full md:w-1/2 flex-col items-center space-y-4 mb-8 md:mb-0">
         <div class="flex justify-center">
-            <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="php">
-                <img src="./assets/svgs/php.svg" alt="PHP" class="w-16 h-16 transition-transform transition-shadow duration-300">
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="php">
+                <img src="./assets/svgs/php.svg" alt="PHP" class="w-24 h-24 transition-transform transition-shadow duration-300">
             </div>
         </div>
-        <div class="flex flex-col items-center space-y-4">
-            <div class="flex justify-center space-x-4">
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="html">
-                    <img src="./assets/svgs/html.svg" alt="HTML5" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="css">
-                    <img src="./assets/svgs/css.svg" alt="CSS3" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="laravel">
-                    <img src="./assets/svgs/laravel.svg" alt="Laravel" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
+        <div class="flex justify-center space-x-8">
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="html">
+                <img src="./assets/svgs/html.svg" alt="HTML5" class="w-24 h-24 transition-transform transition-shadow duration-300">
             </div>
-            <div class="flex justify-center space-x-4">
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="tailwind">
-                    <img src="./assets/svgs/tailwind.svg" alt="Tailwind CSS" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="javascript">
-                    <img src="./assets/svgs/javascript.svg" alt="JavaScript" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="git">
-                    <img src="./assets/svgs/git.svg" alt="Git" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
-                <div class="bg-orange-400 rounded-full p-2 cursor-pointer" data-skill="github">
-                    <img src="./assets/svgs/github.svg" alt="GitHub" class="w-16 h-16 transition-transform transition-shadow duration-300">
-                </div>
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="css">
+                <img src="./assets/svgs/css.svg" alt="CSS3" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="laravel">
+                <img src="./assets/svgs/laravel.svg" alt="Laravel" class="w-24 h-24 transition-transform transition-shadow duration-300">
             </div>
         </div>
-    </div>
-    
-    <div class="w-full p-4 text-justify text-white items-center">
-        <h3 class="text-3xl font-bold mb-4 text-orange-400">Habilidades Técnicas</h3>
-        <p class="text-xl text-white">
+        <div class="flex justify-center space-x-8">
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="tailwind">
+                <img src="./assets/svgs/tailwind.svg" alt="Tailwind CSS" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="javascript">
+                <img src="./assets/svgs/javascript.svg" alt="JavaScript" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="git">
+                <img src="./assets/svgs/git.svg" alt="Git" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            </div>
+            <div class="bg-orange-400 rounded-full p-4 cursor-pointer" data-skill="github">
+                <img src="./assets/svgs/github.svg" alt="GitHub" class="w-24 h-24 transition-transform transition-shadow duration-300">
+            </div>
+        </div>
+        </div>
+        
+        <div class="w-full md:w-1/2 p-6 text-justify text-white items-center mt-[80px] md:mt-0">
+        <h3 class="text-4xl md:text-5xl font-bold mb-6 text-orange-400">Habilidades Técnicas</h3>
+        <p class="text-lg md:text-2xl text-white">
             Experiência em desenvolvimento Full Stack com proficiência em 
             <span class="font-bold text-orange-400 cursor-pointer" data-skill="javascript">JavaScript</span>, 
             <span class="font-bold text-orange-400 cursor-pointer" data-skill="php">PHP</span>, 
@@ -130,18 +128,18 @@
             <span class="font-bold text-orange-400 cursor-pointer" data-skill="github">GitHub</span>. 
             Competente em design responsivo e integração de APIs, entregando soluções completas e eficientes para aplicações web.
         </p>
-    </div>
+        </div>
 </section>
     
-<section id="contato" class="fade-in-element relative flex flex-col md:flex-row justify-center items-center p-8 min-h-screen bg-black">
+<section id="contato" class="fade-in-element relative flex flex-col md:flex-row justify-center items-center p-8 min-h-screen bg-black mt-8 md:mt-0">
 
-    <div class="absolute left-0  w-full h-full z-0">
+    <div class="absolute left-0 w-full h-full z-0">
         <img src="./assets/images/contato.jpg" alt="Contato" class="w-full h-full object-cover opacity-50">
     </div>
 
     <div class="relative z-10 w-full md:w-1/2 flex flex-col justify-center p-6">
-        <h2 class="text-5xl font-bold mb-6 text-orange-400">Contato</h2>
-        <ul class="space-y-6 text-2xl text-white">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6 text-orange-400">Contato</h2>
+        <ul class="space-y-4 md:space-y-6 text-xl md:text-2xl text-white">
             <li class="flex items-center gap-4">
                 <a href="https://linkedin.com/in/pedrolazzaroni" target="_blank" rel="noopener noreferrer" 
                    class="hover:scale-110 transition-transform duration-300">
