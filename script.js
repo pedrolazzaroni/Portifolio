@@ -4,6 +4,10 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
         document.querySelector(this.getAttribute('href')).scrollIntoView({
             behavior: 'smooth'
         });
+        // Fechar o menu ao clicar em um link
+        if (window.innerWidth < 768) {
+            document.getElementById('mobileMenu').classList.add('-translate-y-full');
+        }
     });
 });
 
@@ -127,4 +131,17 @@ document.addEventListener('DOMContentLoaded', () => {
             element.classList.add('fade-in-up');
         });
     }
+
+    // Controle do menu expansível
+    const menuButton = document.getElementById('menuButton');
+    const closeMenuButton = document.getElementById('closeMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('-translate-y-full');
+    });
+
+    closeMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-y-full');
+    });
 });

@@ -21,17 +21,35 @@
     </style>
 </head>
 <body class=" bg-black font-roboto">
-    <header class="bg-black/70 backdrop-blur-sm p-6 fixed w-full top-0 flex justify-between items-center z-50">
-        <nav class="ml-auto">
-            <ul class="flex space-x-8">
-                <li><a href="#home" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Home</a></li>
-                <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Sobre</a></li>
-                <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Projetos</a></li>
-                <li><a href="#habilidades" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Habilidades</a></li>
-                <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400 text-2xl">Contato</a></li>
+    <header class="bg-black/70 backdrop-blur-sm p-4 md:p-6 fixed w-full top-0 flex justify-between items-center z-50">
+        <button id="menuButton" class="text-orange-500 md:hidden">
+            ☰
+        </button>
+        <nav class="ml-auto hidden md:flex">
+            <ul class="flex space-x-4 md:space-x-8">
+                <li><a href="#home" class="text-orange-500 font-bold hover:text-orange-400 text-lg md:text-2xl">Home</a></li>
+                <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400 text-lg md:text-2xl">Sobre</a></li>
+                <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400 text-lg md:text-2xl">Projetos</a></li>
+                <li><a href="#habilidades" class="text-orange-500 font-bold hover:text-orange-400 text-lg md:text-2xl">Habilidades</a></li>
+                <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400 text-lg md:text-2xl">Contato</a></li>
             </ul>
         </nav>
     </header>
+    <nav id="mobileMenu" class="fixed top-0 left-0 w-full bg-black/70 backdrop-blur-sm transform -translate-y-full transition-transform duration-300 md:hidden z-40">
+        <div class="p-4 flex justify-between items-center">
+            <span class="text-orange-500 font-bold text-lg">Menu</span>
+            <button id="closeMenuButton" class="text-orange-500">
+                ✕
+            </button>
+        </div>
+        <ul class="flex flex-col space-y-4 p-4">
+            <li><a href="#home" class="text-orange-500 font-bold hover:text-orange-400 text-lg">Home</a></li>
+            <li><a href="#sobre" class="text-orange-500 font-bold hover:text-orange-400 text-lg">Sobre</a></li>
+            <li><a href="#projetos" class="text-orange-500 font-bold hover:text-orange-400 text-lg">Projetos</a></li>
+            <li><a href="#habilidades" class="text-orange-500 font-bold hover:text-orange-400 text-lg">Habilidades</a></li>
+            <li><a href="#contato" class="text-orange-500 font-bold hover:text-orange-400 text-lg">Contato</a></li>
+        </ul>
+    </nav>
     
     <section id="home" class="fade-in-element flex flex-col md:flex-row-reverse items-center justify-center min-h-screen p-4 md:p-8 mt-8 bg-gradient-to-b to-black from-gray-900 text-center md:text-left">
         <img src="./assets/images/logo3.png" alt="Logo" class="h-auto max-w-xs md:max-w-lg rounded-full transition duration-300 transform hover:shadow-orange-400 hover:scale-110">
