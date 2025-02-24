@@ -139,40 +139,28 @@
           <div class="avatar__logo d-flex align-items-center">
             <div class="logo__image">
               <!-- Your Logo Here -->
-              <svg xmlns="http://www.w3.org/2000/svg" width="85px" height="85px" viewBox="0 0 85 85" style="enable-background:new 0 0 85 85;" xml:space="preserve" class="gradient-fill">
-                <style type="text/css">
-                  .gradient-fill { fill: url(#gradientFill); }
-                </style>
-                <g>
-                  <linearGradient id="gradientFill" gradientUnits="userSpaceOnUse" x1="9.9604" y1="75.0338" x2="75.0387" y2="9.9555">
-                    <stop offset="0" style="stop-color:var(--accent)"/>
-                    <stop offset="1" style="stop-color:var(--secondary)"/>
-                  </linearGradient>
-                  <path class="gradient-fill" d="M51,0H34C15.2,0,0,15.2,0,34v17c0,14.3,8.9,26.6,21.4,31.6l0,0C25.3,84.1,29.5,85,34,85h17c6,0,11.7-1.6,16.6-4.3
-                    c0.1-0.1,0.2-0.1,0.3-0.2C78.1,74.6,85,63.6,85,51V34C85,15.2,69.8,0,51,0z"/>
-                </g>
-              </svg>
+             <img src="assets/favicon/favicon.png" alt="">
             </div>
             <div class="logo__caption">
               <p>Pedro<br>Lazzaroni</p>
             </div>
           </div>
           <div class="avatar__image">
-            <img src="img/avatars/1024x1024_a02.webp" alt="Avatar">
+            <img src="assets/images/logo3.png" alt="Avatar" style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%; margin: 0 auto;">
           </div>
         </div>
         <!-- data caption #1 -->
         <div class="avatar__block">
           <h6>
             <small class="top">Especialização:</small>
-            Desenvolvedor<br>e Entusiasta de Tecnologia
+            PHP, Laravel, Tailwind CSS, JavaScript, HTML, CSS
           </h6>
         </div>
         <!-- data caption #2 -->
         <div class="avatar__block">
           <h6>
-            <small class="top">Based in:</small>
-            Odesa, Ukraine
+            <small class="top">Moro em:</small>
+            Brasil
           </h6>
         </div>
         <!-- socials and CTA button -->
@@ -233,62 +221,67 @@
         </section>
         <!-- Intro Section End -->
 
-        <!-- Portfolio Section Start -->
-        <section id="portfolio" class="main portfolio">
-          <!-- Portfolio Content Start -->
-          <div class="portfolio__content">
-            <h2 class="portfolio__title">LazzHub</h2>
-            <p>Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial Gemini. Desenvolvido com Laravel e estilizado com Tailwind CSS, o LazzHub é totalmente responsivo e está disponível para acesso em pedrolazzaroni.com.br/lazzhub. O código-fonte pode ser encontrado no meu GitHub.</p>
-            <div class="portfolio__grid">
-              <!-- Portfolio Item Start -->
-              <div class="portfolio__item">
-                <a class="portfolio__link" href="portfolio-item.html">
-                  <img class="portfolio__image" src="img/portfolio/portfolio-1.jpg" alt="Portfolio Item">
-                  <div class="portfolio__overlay">
-                    <h3 class="portfolio__caption">Project Title</h3>
-                    <p class="portfolio__description">Project Description</p>
-                  </div>
-                </a>
-              </div>
-              <!-- Portfolio Item End -->
-              <!-- Portfolio Item Start -->
-              <div class="portfolio__item">
-                <a class="portfolio__link" href="portfolio-item.html">
-                  <img class="portfolio__image" src="img/portfolio/portfolio-2.jpg" alt="Portfolio Item">
-                  <div class="portfolio__overlay">
-                    <h3 class="portfolio__caption">Project Title</h3>
-                    <p class="portfolio__description">Project Description</p>
-                  </div>
-                </a>
-              </div>
-              <!-- Portfolio Item End -->
-              <!-- Portfolio Item Start -->
-              <div class="portfolio__item">
-                <a class="portfolio__link" href="portfolio-item.html">
-                  <img class="portfolio__image" src="img/portfolio/portfolio-3.jpg" alt="Portfolio Item">
-                  <div class="portfolio__overlay">
-                    <h3 class="portfolio__caption">Project Title</h3>
-                    <p class="portfolio__description">Project Description</p>
-                  </div>
-                </a>
-              </div>
-              <!-- Portfolio Item End -->
-            </div>
-          </div>
-          <!-- Portfolio Content End -->
-        </section>
-        <!-- Portfolio Section End -->
-
         <!-- About Section Start -->
         <section id="about" class="main about">
-          <!-- About Content Start -->
           <div class="about__content">
-            <h2 class="about__title">Sobre</h2>
-            <p class="about__description">Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.</p>
+            <div class="about-card">
+              <div class="about-card__inner">
+                <h2 class="about-card__title">Sobre Mim</h2>
+                <div class="about-card__content">
+                  <p class="about-card__description">
+                    Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. Com experiência em frameworks modernos e design responsivo, busco constantemente aprimorar minhas habilidades e acompanhar as tendências tecnológicas.
+                  </p>
+                  <div class="about-card__skills">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="tags">
+                      <span class="rounded-tag">PHP</span>
+                      <span class="rounded-tag">Laravel</span>
+                      <span class="rounded-tag">JavaScript</span>
+                      <span class="rounded-tag">HTML</span>
+                      <span class="rounded-tag">CSS</span>
+                      <span class="rounded-tag">Tailwind CSS</span>
+                      <span class="rounded-tag">Git</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <!-- About Content End -->
         </section>
         <!-- About Section End -->
+
+        <!-- Portfolio Section Start -->
+        <section id="portfolio" class="main portfolio">
+          <div class="portfolio__content">
+            <div class="portfolio-card">
+              <div class="portfolio-card__inner">
+                <div class="portfolio-card__image">
+                  <img src="assets/images/lazzhub.png" alt="LazzHub Project">
+                </div>
+                <div class="portfolio-card__content">
+                  <h2 class="portfolio-card__title">LazzHub</h2>
+                  <p class="portfolio-card__description">
+                    Este foi um projeto de uma plataforma que permite aos usuários gerar resumos inteligentes, criar questões de prova personalizadas e obter respostas sobre diversos assuntos, tudo com o auxílio de inteligência artificial Gemini.
+                  </p>
+                  <div class="portfolio-card__tags">
+                    <span class="rounded-tag">Laravel</span>
+                    <span class="rounded-tag">Tailwind CSS</span>
+                    <span class="rounded-tag">API Integration</span>
+                  </div>
+                  <div class="portfolio-card__links">
+                    <a href="https://pedrolazzaroni.com.br/lazzhub" class="btn btn-default btn-hover btn-hover-accent" target="_blank">
+                      <span class="btn-caption">Ver Projeto</span>
+                    </a>
+                    <a href="https://github.com/pedrolazzaroni" class="btn btn-default btn-hover btn-hover-outline" target="_blank">
+                      <span class="btn-caption">Ver Código</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Portfolio Section End -->
 
         <!-- Resume Section Start -->
         <section id="resume" class="main resume">
