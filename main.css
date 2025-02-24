@@ -158,7 +158,7 @@
     --t-accent: var(--t-accent--light);
     --t-secondary: var(--t-secondary--light);
     --t-disabled: var(--t-disabled--light);
-    --t-placeholder: var(--t-placeholder--light);
+    --t-placeholder: var (--t-placeholder--light);
     --base-opp: var(--base-opp--light);
     --t-opp-bright: var(--t-opp-bright--light);
     --t-opp-medium: var(--t-opp-medium--light);
@@ -3225,7 +3225,7 @@ form textarea:required:valid {
   font: normal 700 2.6rem/1.2 var(--_font-default);
   font-variant-numeric: lining-nums;
   background: var(--t-accent);
-  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var(--t-secondary) 80%);
+  background: -webkit-linear-gradient(15deg, var(--t-accent) 0%, var (--t-secondary) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -4423,6 +4423,7 @@ form textarea:required:valid {
   position: relative;
   width: 100%;
   margin: 2rem 0;
+  max-width: 500px; /* Limitando a largura máxima do card */
 }
 
 .portfolio-card__inner {
@@ -4505,7 +4506,7 @@ form textarea:required:valid {
   grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2rem;
-  max-width: 1400px;
+  max-width: 1000px; /* Reduzindo a largura máxima */
   margin: 0 auto;
 }
 
@@ -4538,7 +4539,7 @@ form textarea:required:valid {
 
 .portfolio-card__inner--vertical .portfolio-card__image {
   width: 100% !important;
-  height: 250px;
+  height: 200px; /* Reduzindo a altura da imagem */
 }
 
 .portfolio-card__inner--vertical .portfolio-card__image img {
@@ -4554,6 +4555,6 @@ form textarea:required:valid {
 
 @media only screen and (min-width: 992px) {
   .portfolio-card__inner--vertical .portfolio-card__image {
-    height: 300px;
+    height: 250px; /* Reduzindo a altura da imagem em telas maiores */
   }
 }
