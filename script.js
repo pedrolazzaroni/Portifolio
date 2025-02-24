@@ -12,7 +12,8 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const sliderImages = document.querySelectorAll('#projetos img');
+    // Alterado para selecionar as imagens slider pelo seletor ".slider-image"
+    const sliderImages = document.querySelectorAll('.slider-image');
     let currentImage = 0;
     const totalImages = sliderImages.length;
     let sliderInterval;
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (i === index) {
                 img.style.transform = 'translateX(0)';
                 img.style.opacity = '1';
-            } else if (i !== currentImage) {
+            } else {
                 img.style.transform = 'translateX(100%)';
                 img.style.opacity = '0';
             }
