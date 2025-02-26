@@ -203,6 +203,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const feedbackOverlay = document.getElementById('feedbackOverlay');
   const feedbackCloseBtn = document.querySelector('.feedback-modal__button');
   
+  // Inicializa o EmailJS
+  // IMPORTANTE: Substitua "YOUR_PUBLIC_KEY" pela sua chave pública do EmailJS
+  (function() {
+    emailjs.init("pujPogUrUGK9kyra2");
+  })();
+  
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -215,16 +221,45 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Simple validation
       if (name && email && message) {
-        // Show feedback modal
-        feedbackModal.classList.add('active');
-        feedbackOverlay.classList.add('active');
+        // Preparar o objeto de parâmetros para o template
+        const templateParams = {
+          from_name: name,
+          from_email: email,
+          subject: subject || "Nova mensagem do portfólio",
+          message: message
+        };
         
-        // In a real project, send data to a server here
+        // Mostrar indicador de carregamento (opcional)
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="bi bi-arrow-repeat bi-spin"></i> Enviando...';
         
-        // Reset form
-        contactForm.reset();
+        // IMPORTANTE: Substitua "YOUR_SERVICE_ID" e "YOUR_TEMPLATE_ID" pelos IDs do seu serviço e template
+        emailjs.send("service_y755jtj", "template_ua1ms3n", templateParams)
+          .then(function(response) {
+            console.log('Email enviado!', response.status, response.text);
+            
+            // Mostrar modal de sucesso
+            feedbackModal.classList.add('active');
+            feedbackOverlay.classList.add('active');
+            
+            // Reset form
+            contactForm.reset();
+            
+            // Restaurar botão
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          }, function(error) {
+            console.log('Falha ao enviar email...', error);
+            alert('Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.');
+            
+            // Restaurar botão
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalText;
+          });
       } else {
-        // Show error feedback (you could create another modal for errors)
+        // Show error feedback
         alert('Por favor, preencha todos os campos obrigatórios.');
       }
     });
