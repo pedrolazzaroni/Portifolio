@@ -1419,8 +1419,9 @@ footer {
 }
 
 .publication-title {
-  font-size: 1.3rem;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  line-height: 1.4;
 }
 
 .publication-abstract {
