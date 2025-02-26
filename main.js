@@ -199,6 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // ================ CONTACT FORM ================
   const contactForm = document.getElementById('contactForm');
+  const feedbackModal = document.getElementById('feedbackModal');
+  const feedbackOverlay = document.getElementById('feedbackOverlay');
+  const feedbackCloseBtn = document.querySelector('.feedback-modal__button');
   
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -212,16 +215,45 @@ document.addEventListener('DOMContentLoaded', () => {
       
       // Simple validation
       if (name && email && message) {
+        // Show feedback modal
+        feedbackModal.classList.add('active');
+        feedbackOverlay.classList.add('active');
+        
         // In a real project, send data to a server here
-        // For now, just show success message
-        alert('Mensagem enviada com sucesso! Em breve entrarei em contato.');
+        
+        // Reset form
         contactForm.reset();
       } else {
+        // Show error feedback (you could create another modal for errors)
         alert('Por favor, preencha todos os campos obrigatórios.');
       }
     });
   }
   
+  // Close modal when clicking the close button
+  if (feedbackCloseBtn) {
+    feedbackCloseBtn.addEventListener('click', () => {
+      feedbackModal.classList.remove('active');
+      feedbackOverlay.classList.remove('active');
+    });
+  }
+  
+  // Close modal when clicking outside
+  if (feedbackOverlay) {
+    feedbackOverlay.addEventListener('click', () => {
+      feedbackModal.classList.remove('active');
+      feedbackOverlay.classList.remove('active');
+    });
+  }
+  
+  // Close modal on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && feedbackModal.classList.contains('active')) {
+      feedbackModal.classList.remove('active');
+      feedbackOverlay.classList.remove('active');
+    }
+  });
+
   // ================ SMOOTH SCROLL ================
   const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
   
