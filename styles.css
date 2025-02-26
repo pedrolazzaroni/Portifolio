@@ -12,6 +12,8 @@
   --transition: all 0.3s ease;
   --shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   --gradient: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  --bg-light-rgb: 255, 255, 255;
+  --bg-dark-rgb: 26, 26, 26;
 }
 
 /* Dark Theme Variables */
@@ -23,6 +25,8 @@
   --secondary: #f5f5f5;
   --border-color: rgba(255, 255, 255, 0.1);
   --shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  --bg-light-rgb: 26, 26, 26;
+  --bg-dark-rgb: 17, 17, 17;
 }
 
 /* ================ BASE STYLES ================ */
@@ -177,8 +181,14 @@ header {
 
 .scrolled {
   padding: 15px 0;
-  background: var(--bg-light);
+  background: rgba(var(--bg-light-rgb), 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   box-shadow: var(--shadow);
+}
+
+.dark-theme .scrolled {
+  background: rgba(var(--bg-light-rgb), 0.85);
 }
 
 .logo {
@@ -1105,6 +1115,9 @@ footer {
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background: rgba(var(--bg-light-rgb), 0.85) !important;
   }
 }
 
