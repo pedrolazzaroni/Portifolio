@@ -213,6 +213,13 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       
+      // Verificar reCAPTCHA
+      const recaptchaResponse = grecaptcha.getResponse();
+      if (!recaptchaResponse) {
+        alert('Por favor, complete o reCAPTCHA.');
+        return;
+      }
+      
       // Get form values
       const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
@@ -226,7 +233,8 @@ document.addEventListener('DOMContentLoaded', () => {
           from_name: name,
           from_email: email,
           subject: subject || "Nova mensagem do portfólio",
-          message: message
+          message: message,
+          'g-recaptcha-response': recaptchaResponse // Incluir resposta do reCAPTCHA
         };
         
         // Mostrar indicador de carregamento (opcional)
