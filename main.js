@@ -69,9 +69,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const navLinksItems = document.querySelectorAll('.nav-link');
   
   menuToggle.addEventListener('click', () => {
+    // Toggle menu classes
     menuToggle.classList.toggle('menu-open');
     navLinks.classList.toggle('active');
     document.body.classList.toggle('no-scroll');
+    
+    // Garante posição fixa na localização atual do scroll
+    if (document.body.classList.contains('no-scroll')) {
+      document.body.style.top = `-${window.scrollY}px`;
+    } else {
+      // Restaura a posição do scroll quando o menu for fechado
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
   });
   
   // Close menu when clicking on a link
@@ -80,7 +91,26 @@ document.addEventListener('DOMContentLoaded', () => {
       menuToggle.classList.remove('menu-open');
       navLinks.classList.remove('active');
       document.body.classList.remove('no-scroll');
+      
+      // Restaura a posição do scroll quando o menu for fechado
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
     });
+  });
+  
+  // Close menu when resizing to desktop view
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 992 && navLinks.classList.contains('active')) {
+      menuToggle.classList.remove('menu-open');
+      navLinks.classList.remove('active');
+      document.body.classList.remove('no-scroll');
+      
+      // Restaura a posição do scroll
+      const scrollY = document.body.style.top;
+      document.body.style.top = '';
+      window.scrollTo(0, parseInt(scrollY || '0') * -1);
+    }
   });
   
   // Update active link on scroll
