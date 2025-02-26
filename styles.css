@@ -27,6 +27,7 @@
   --shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
   --bg-light-rgb: 26, 26, 26;
   --bg-dark-rgb: 17, 17, 17;
+  scrollbar-color: var(--primary) #000000; /* Segundo valor é a cor do track (fundo) */
 }
 
 /* ================ BASE STYLES ================ */
@@ -35,6 +36,40 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+/* Barra de rolagem personalizada */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--bg-light-rgb), 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--gradient);
+  border-radius: 6px;
+  border: 3px solid rgba(var(--bg-light-rgb), 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-dark);
+}
+
+/* Para Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) rgba(var(--bg-light-rgb), 0.5);
+}
+
+/* Ajustes da scrollbar para o tema escuro */
+.dark-theme::-webkit-scrollbar-track {
+  background: #000000; /* Fundo preto sólido para o tema escuro */
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  border: 3px solid #000000; /* Borda preta sólida para o thumb */
 }
 
 body {
@@ -80,6 +115,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ================ CURSOR FOLLOWER ================ */
 .cursor-follower {
+  /* Removendo o cursor follower ao definir display como none */
+  display: none;
+  /* O resto das propriedades existentes podem permanecer */
   position: fixed;
   width: 30px;
   height: 30px;
@@ -321,7 +359,7 @@ header {
   overflow: hidden;
 }
 
-.text-reveal::after {
+.text-reveal.animate-text::after {
   content: '';
   position: absolute;
   top: 0;
@@ -361,15 +399,15 @@ header {
   color: var(--bg-light);
   background: var(--primary);
   border-radius: 4px;
-  animation: slideInFromLeft 1s ease 1s forwards;
   opacity: 0;
+  /* A animação será aplicada via JavaScript */
 }
 
 .hero-description {
   margin-bottom: 40px;
   max-width: 500px;
   opacity: 0;
-  animation: fadeIn 1s ease 1.5s forwards;
+  /* A animação será aplicada via JavaScript */
 }
 
 .hero-buttons {
@@ -502,9 +540,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.7;
-  animation: fadeIn 1s ease 2s forwards;
   opacity: 0;
+  /* A animação será aplicada via JavaScript */
 }
 
 .mouse {

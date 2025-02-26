@@ -3,6 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
   // ================ PRELOADER ================
   const loadingScreen = document.querySelector('.loading-screen');
   
+  // Elementos que serão animados após o carregamento
+  const textRevealElements = document.querySelectorAll('.text-reveal');
+  const profession = document.querySelector('.profession');
+  const heroDescription = document.querySelector('.hero-description');
+  const scrollIndicator = document.querySelector('.scroll-indicator');
+  
+  // Inicialmente, remova as animações automáticas
+  profession.style.animation = 'none';
+  heroDescription.style.animation = 'none';
+  scrollIndicator.style.animation = 'none';
+  
   window.addEventListener('load', () => {
     // Hide the loading screen after some delay for better UX
     setTimeout(() => {
@@ -10,45 +21,35 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
         loadingScreen.style.visibility = 'hidden';
         
-        // Start animations after loading
+        // Iniciar animações da home após o preloader
+        startHomeAnimations();
+        
+        // Start all other animations after loading
         startAnimations();
       }, 500);
     }, 1500);
   });
   
-  // ================ CUSTOM CURSOR ================
-  const cursorFollower = document.querySelector('.cursor-follower');
-  const links = document.querySelectorAll('a, button, .theme-toggle, .menu-toggle');
-  
-  // Update cursor position
-  document.addEventListener('mousemove', (e) => {
-    cursorFollower.style.left = e.clientX + 'px';
-    cursorFollower.style.top = e.clientY + 'px';
-  });
-  
-  // Add hover effect to links
-  links.forEach(link => {
-    link.addEventListener('mouseenter', () => {
-      cursorFollower.classList.add('active');
+  // Nova função para iniciar as animações da página inicial
+  function startHomeAnimations() {
+    // Ativar animações de reveal do texto do título
+    textRevealElements.forEach((element, index) => {
+      element.classList.add('animate-text');
+      // Adicione um pequeno atraso entre cada elemento
+      element.style.animationDelay = `${index * 0.2}s`;
     });
     
-    link.addEventListener('mouseleave', () => {
-      cursorFollower.classList.remove('active');
-    });
-  });
-  
-  // Hide cursor when it leaves the window
-  document.addEventListener('mouseleave', () => {
-    cursorFollower.style.opacity = '0';
-  });
-  
-  document.addEventListener('mouseenter', () => {
-    cursorFollower.style.opacity = '1';
-  });
-  
-  // Disable cursor on mobile devices
-  if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
-    cursorFollower.style.display = 'none';
+    // Ativar animação da profissão com delay
+    profession.style.animation = 'slideInFromLeft 1s ease forwards';
+    profession.style.animationDelay = '0.6s';
+    
+    // Ativar animação da descrição
+    heroDescription.style.animation = 'fadeIn 1s ease forwards';
+    heroDescription.style.animationDelay = '1.0s';
+    
+    // Ativar animação do indicador de rolagem
+    scrollIndicator.style.animation = 'fadeIn 1s ease forwards';
+    scrollIndicator.style.animationDelay = '1.5s';
   }
   
   // ================ STICKY NAVIGATION ================
