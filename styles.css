@@ -72,6 +72,13 @@ html {
   border: 3px solid #000000; /* Borda preta sólida para o thumb */
 }
 
+/* Ajuste global para evitar overflow */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   color: var(--text);
@@ -323,6 +330,40 @@ header {
 .menu-open .hamburger::after {
   transform: rotate(-45deg);
   bottom: 0;
+}
+
+/* Ajustes responsivos da navegação */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 15px;
+  }
+  
+  .logo {
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 10px;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .logo img {
+    height: 28px;
+    margin-right: 6px;
+  }
+  
+  .theme-toggle {
+    font-size: 18px;
+  }
 }
 
 /* ================ HERO SECTION ================ */
@@ -886,6 +927,22 @@ header {
   font-weight: 500;
 }
 
+@media (max-width: 480px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 12px;
+  }
+  
+  /* Ajuste para projetos em telas pequenas */
+  .project-image {
+    height: 180px;
+  }
+}
+
 /* ================ SKILLS SECTION ================ */
 .skills-content {
   display: flex;
@@ -1024,6 +1081,91 @@ header {
 .form-group textarea {
   height: 150px;
   resize: vertical;
+}
+
+/* Media queries específicas para a seção de contato */
+@media (max-width: 768px) {
+  .contact-item {
+    margin-bottom: 20px;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  .contact-details h3 {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+  
+  .contact-details a {
+    font-size: 0.5rem;
+    word-break: break-all;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px;
+  }
+  
+  .form-group textarea {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-content {
+    gap: 30px;
+  }
+  
+  .contact-item {
+    margin-bottom: 15px;
+  }
+  
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    margin-right: 12px;
+  }
+  
+  .contact-details h3 {
+    font-size: 0.95rem;
+  }
+  
+  .contact-details a {
+    font-size: 0.85rem;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Ajuste para quebra em telas muito pequenas */
+@media (max-width: 350px) {
+  .contact-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact-icon {
+    margin-bottom: 10px;
+  }
 }
 
 /* ================ FOOTER ================ */
@@ -1175,6 +1317,15 @@ footer {
   .navbar {
     padding: 0 20px;
   }
+  
+  .container {
+    width: 95%;
+    padding: 0 10px;
+  }
+  
+  .section-padding {
+    padding: 80px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1192,6 +1343,20 @@ footer {
 
   .skill-card {
     padding: 20px;
+  }
+  
+  .container {
+    width: 98%;
+    padding: 0 5px;
+  }
+  
+  /* Reduz padding das várias seções em mobile */
+  .project-info {
+    padding: 15px;
+  }
+  
+  .skill-card {
+    padding: 15px;
   }
 }
 
@@ -1615,5 +1780,47 @@ footer {
   
   .publication-content {
     padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .publication-title {
+    font-size: 1rem;
+  }
+  
+  .publication-badge {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+  }
+  
+  .publication-header h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ================ CORREÇÕES ESPECÍFICAS PARA EVITAR OVERFLOW ================ */
+@media (max-width: 480px) {
+  /* Garante que imagens e elementos fluidos respeitem o container */
+  img, video, iframe, object, embed {
+    max-width: 100%;
+  }
+  
+  /* Ajusta o grid de projetos para dispositivos pequenos */
+  .projects-grid {
+    gap: 20px;
+  }
+  
+  /* Reduz o padding do modal de feedback */
+  .feedback-modal__content {
+    padding: 20px 15px;
+  }
+  
+  /* Ajusta texto longos para quebrarem corretamente */
+  .publication-title,
+  .project-title,
+  .section-title,
+  h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    hyphens: auto;
   }
 }
