@@ -87,7 +87,7 @@
                     </div>
                     <div class="hero-image">
                         <div class="image-container parallax-element">
-                            <img src="assets/images/novalogo.png" alt="Pedro Lazzaroni">
+                            <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni">
                             <div class="blob-animation"></div>
                         </div>
                         <div class="floating-tech-icons">
@@ -118,7 +118,7 @@
                 <div class="about-content">
                     <div class="about-image slide-right">
                         <div class="image-frame">
-                            <img src="assets/images/novalogo.png" alt="Pedro Lazzaroni Profile">
+                            <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni Profile">
                         </div>
                     </div>
                     
@@ -240,7 +240,7 @@
                     
                     <div class="project-card fade-in" data-category="app">
                         <div class="project-image">
-                            <img src="assets/images/pontoon.png" alt="PontoOn">
+                            <img src="assets/images/pontoon.png?v=<?php echo filemtime('assets/images/pontoon.png'); ?>" alt="PontoOn">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="https://pontoon.pedrolazzaroni.com.br/" class="project-link" target="_blank">
