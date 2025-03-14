@@ -879,6 +879,7 @@ body.no-scroll {
   border: 1px solid var(--border-color);
   border-radius: 30px;
   font-size: 14px;
+  color: orange;
   font-weight: 500;
   cursor: pointer;
   transition: var(--transition);
