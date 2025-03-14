@@ -87,7 +87,7 @@
                     </div>
                     <div class="hero-image">
                         <div class="image-container parallax-element">
-                            <img src="assets/images/logo3.png" alt="Pedro Lazzaroni">
+                            <img src="assets/images/novalogo.png" alt="Pedro Lazzaroni">
                             <div class="blob-animation"></div>
                         </div>
                         <div class="floating-tech-icons">
@@ -118,7 +118,7 @@
                 <div class="about-content">
                     <div class="about-image slide-right">
                         <div class="image-frame">
-                            <img src="assets/images/logo3.png" alt="Pedro Lazzaroni Profile">
+                            <img src="assets/images/novalogo.png" alt="Pedro Lazzaroni Profile">
                         </div>
                     </div>
                     
