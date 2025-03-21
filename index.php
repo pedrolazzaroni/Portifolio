@@ -265,6 +265,33 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="project-card fade-in" data-category="web app">
+                        <div class="project-image">
+                            <img src="assets/images/exceltosql.png?v=<?php echo filemtime('assets/images/exceltosql.png'); ?>" alt="ExcelToSql">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://conversor.pedrolazzaroni.com.br/" class="project-link" target="_blank">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                    <a href="https://github.com/pedrolazzaroni/ConverterXlsxToSQL" class="project-link" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">ExcelToSql</h3>
+                            <p class="project-description">
+                                Conversor de arquivos Excel para SQL, facilitando a migração de dados para bancos de dados relacionais.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">PHP</span>
+                                <span class="tag">HTML</span>
+                                <span class="tag">Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
