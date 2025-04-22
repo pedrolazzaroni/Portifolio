@@ -292,6 +292,28 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card fade-in" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/images/cafedasmarias.png" alt="Café das Marias">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://cafedasmariasoficial.com/" class="project-link" target="_blank">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Café das Marias</h3>
+                            <p class="project-description">
+                                Projeto em conjunto: dei apoio no desenvolvimento da página do Café das Marias, uma rede de apoio de prevenção e combate à violência contra a mulher e a menina.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">WordPress</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
