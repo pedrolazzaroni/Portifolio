@@ -87,7 +87,10 @@
                     </div>
                     <div class="hero-image">
                         <div class="image-container parallax-element">
-                            <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni">
+                            <picture>
+                                <source srcset="assets/images/novalogo.png" type="image/png">
+                                <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni">
+                            </picture>
                             <div class="blob-animation"></div>
                         </div>
                         <div class="floating-tech-icons">
@@ -118,7 +121,10 @@
                 <div class="about-content">
                     <div class="about-image slide-right">
                         <div class="image-frame">
-                            <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni Profile">
+                            <picture>
+                                <source srcset="assets/images/novalogo.png" type="image/png">
+                                <img src="assets/images/novalogo.png?v=<?php echo filemtime('assets/images/novalogo.png'); ?>" alt="Pedro Lazzaroni Profile">
+                            </picture>
                         </div>
                     </div>
                     
