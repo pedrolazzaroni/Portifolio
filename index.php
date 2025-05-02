@@ -321,6 +321,31 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card fade-in" data-category="design web">
+                        <div class="project-image">
+                            <img src="assets/images/vasistemas.png" alt="VA Sistemas">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://preco.vasistemas.com.br/" class="project-link" target="_blank">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">VA Sistemas</h3>
+                            <p class="project-description">
+                                Landing page do Cesta de Preços VA, um sistema de banco de preços para órgãos públicos.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
