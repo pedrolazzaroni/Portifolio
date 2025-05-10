@@ -346,6 +346,30 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card fade-in" data-category="app">
+                        <div class="project-image" style="height:420px; max-width:220px; margin:auto; display:flex; align-items:center; justify-content:center; border-radius:20px; box-shadow:0 2px 12px rgba(0,0,0,0.07); background:transparent;">
+                            <img src="assets/images/stockcalc.png" alt="StockCalc" style="height:400px; width:auto; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.10); background:transparent;">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/pedrolazzaroni/StockCalc" class="project-link" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">StockCalc</h3>
+                            <p class="project-description">
+                                Calculadora de investimentos que utiliza a API Gemini 2.0 Flash para análises inteligentes. Desenvolvido em Flutter, com integração de IA para recomendações e simulações.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">API</span>
+                                <span class="tag">Flutter</span>
+                                <span class="tag">IA</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
