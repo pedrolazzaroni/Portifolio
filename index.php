@@ -2,12 +2,39 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, maximum-scale=5">
+    <meta name="theme-color" content="#FFA500">
+    <meta name="language" content="pt-BR">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="alternate" href="https://pedrolazzaroni.com.br/" hreflang="pt-br" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
     <title>Pedro Lazzaroni | Desenvolvedor</title>
     <meta name="description" content="Portfólio de Pedro Lazzaroni - Desenvolvedor Web especializado em PHP, Laravel e Tailwind CSS">
+    <meta name="keywords" content="Pedro Lazzaroni, portfólio, desenvolvedor web, PHP, Laravel, Tailwind, JavaScript, HTML, CSS, projetos, sistemas, frontend, backend, IA, inteligência artificial">
+    <meta name="author" content="Pedro Lazzaroni">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <link rel="canonical" href="https://pedrolazzaroni.com.br/">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Pedro Lazzaroni | Desenvolvedor Web e Sistemas">
+    <meta property="og:description" content="Portfólio de Pedro Lazzaroni - Desenvolvedor Web especializado em PHP, Laravel, Tailwind CSS, projetos modernos, IA e soluções digitais.">
+    <meta property="og:image" content="https://pedrolazzaroni.com.br/assets/images/portifolio.png">
+    <meta property="og:url" content="https://pedrolazzaroni.com.br/">
+    <meta property="og:type" content="website">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pedro Lazzaroni | Desenvolvedor Web e Sistemas">
+    <meta name="twitter:description" content="Portfólio de Pedro Lazzaroni - Desenvolvedor Web especializado em PHP, Laravel, Tailwind CSS, projetos modernos, IA e soluções digitais.">
+    <meta name="twitter:image" content="https://pedrolazzaroni.com.br/assets/images/portifolio.png">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon/favicon.png">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +47,29 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css?v=<?php echo filemtime('styles.css'); ?>">
+    
+    <!-- Schema.org JSON-LD for Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pedro Lazzaroni",
+      "url": "https://pedrolazzaroni.com.br/",
+      "image": "https://pedrolazzaroni.com.br/assets/images/novalogo.png",
+      "sameAs": [
+        "https://linkedin.com/in/pedrolazzaroni",
+        "https://github.com/pedrolazzaroni",
+        "https://www.instagram.com/pedro_lazzaroni"
+      ],
+      "jobTitle": "Desenvolvedor Web",
+      "description": "Portfólio de Pedro Lazzaroni - Desenvolvedor Web especializado em PHP, Laravel, Tailwind CSS, projetos modernos, IA e soluções digitais.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      }
+    }
+    </script>
+    <!-- End Schema.org JSON-LD -->
 </head>
 <body>
     <!-- Cursor Follower -->
