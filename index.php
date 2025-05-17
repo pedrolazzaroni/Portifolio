@@ -420,6 +420,33 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card fade-in" data-category="web">
+                        <div class="project-image">
+                            <img src="assets/images/lazzpace.png" alt="LazzPace">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://pace.pedrolazzaroni.com.br/" class="project-link" target="_blank">
+                                        <i class="bi bi-link-45deg"></i>
+                                    </a>
+                                    <a href="https://github.com/pedrolazzaroni/LazzPace" class="project-link" target="_blank">
+                                        <i class="bi bi-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">LazzPace</h3>
+                            <p class="project-description">
+                                Calculadora de pace para corredores, com dicas personalizadas para melhorar o desempenho nas corridas.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
