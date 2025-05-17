@@ -70,6 +70,37 @@
     }
     </script>
     <!-- End Schema.org JSON-LD -->
+    <style>
+.project-card.stockcalc-card .project-image img {
+  height: 180px;
+  width: 320px;
+  max-width: 100%;
+  object-fit: contain;
+  transition: height 0.8s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+}
+.project-card.stockcalc-card .project-image:hover img {
+  height: 320px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  z-index: 2;
+}
+.project-card.stockcalc-card .project-links {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  z-index: 3;
+}
+.project-card.stockcalc-card .project-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+}
+.project-card.stockcalc-card .project-link {
+  pointer-events: auto;
+}
+.project-card.stockcalc-card .project-image {
+  position: relative;
+}
+</style>
 </head>
 <body>
     <!-- Cursor Follower -->
@@ -397,9 +428,9 @@
                         </div>
                     </div>
 
-                    <div class="project-card fade-in" data-category="app">
-                        <div class="project-image" style="height:420px; max-width:220px; margin:auto; display:flex; align-items:center; justify-content:center; border-radius:20px; box-shadow:0 2px 12px rgba(0,0,0,0.07); background:transparent;">
-                            <img src="assets/images/stockcalc.png" alt="StockCalc" style="height:400px; width:auto; border-radius:16px; box-shadow:0 2px 8px rgba(0,0,0,0.10); background:transparent;">
+                    <div class="project-card fade-in stockcalc-card" data-category="app">
+                        <div class="project-image" style="height:auto; max-width:320px; margin:auto; display:flex; align-items:center; justify-content:center; border-radius:20px; box-shadow:0 2px 12px rgba(0,0,0,0.07); background:transparent;">
+                            <img src="assets/images/stockcalc.png" alt="StockCalc">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="https://github.com/pedrolazzaroni/StockCalc" class="project-link" target="_blank">
