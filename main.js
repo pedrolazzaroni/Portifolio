@@ -259,7 +259,6 @@ document.addEventListener('DOMContentLoaded', () => {
           subject: subject || "Nova mensagem do portfólio",
           message: message
         };
-        
         // Mostrar indicador de carregamento (opcional)
         const submitBtn = contactForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
