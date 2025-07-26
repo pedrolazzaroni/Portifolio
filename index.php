@@ -492,7 +492,7 @@
                         <h3 class="academic-subtitle">Sistemas de Informação</h3>
                         <div class="university-info">
                             <span class="university-name">Universidade do Estado de Minas Gerais</span>
-                            <span class="academic-period">7º Período</span>
+                            <span class="academic-period">8º Período</span>
                         </div>
                         <p class="academic-description">
                             Como estudante de Sistemas de Informação na UEMG, venho desenvolvendo habilidades técnicas e 
