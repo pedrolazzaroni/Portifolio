@@ -479,7 +479,6 @@
             </div>
         </section>
 
-        <!-- Academic Section - NOVA SEÇÃO -->
         <section id="academic" class="academic-section section-padding">
             <div class="container">
                 <div class="section-header">
