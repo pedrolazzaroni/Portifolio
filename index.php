@@ -130,6 +130,7 @@
             <ul class="nav-links">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#work" class="nav-link">Experiência</a></li>
                 <li><a href="#projects" class="nav-link">Projetos</a></li>
                 <li><a href="#academic" class="nav-link">Formação</a></li>
                 <li><a href="#skills" class="nav-link">Habilidades</a></li>
@@ -245,6 +246,53 @@
                             <a href="mailto:contato@pedrolazzaroni.com.br" class="social-link">
                                 <i class="bi bi-envelope"></i>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag slide-up">EXPERIÊNCIA</span>
+                    <h2 class="section-title slide-up">Minha Jornada Profissional</h2>
+                </div>
+                
+                <div class="work-timeline">
+                    <div class="timeline-item slide-up">
+                        <div class="timeline-side">
+                            <div class="timeline-vertical">
+                                <span class="date-badge timeline-start">Jun 2024</span>
+                                <span class="timeline-line timeline-line-top"></span>
+                                <span class="timeline-line timeline-line-bottom"></span>
+                                <span class="timeline-dot"></span>
+                                <span class="date-badge timeline-end">ATUAL</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-info">
+                                <div class="timeline-header">
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-laptop"></i>
+                                    </div>
+                                </div>
+                                <h3 class="timeline-title">Estagiário em Programação Fullstack</h3>
+                                <h4 class="timeline-company">VA Sistemas</h4>
+                                <p class="timeline-description">
+                                    Desenvolvimento de um sistema inovador de banco de preços para cotações públicas, 
+                                    proporcionando transparência e eficiência nos processos licitatórios. Trabalho com 
+                                    tecnologias modernas para criar soluções robustas e escaláveis.
+                                </p>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">APIs</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
