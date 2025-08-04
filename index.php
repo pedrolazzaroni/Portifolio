@@ -257,7 +257,7 @@
             <div class="container">
                 <div class="section-header">
                     <span class="section-tag slide-up">EXPERIÊNCIA</span>
-                    <h2 class="section-title slide-up">Minha Jornada Profissional</h2>
+                    <h2 class="section-title slide-up">Jornada Profissional</h2>
                 </div>
                 
                 <div class="work-timeline">
@@ -278,15 +278,16 @@
                                         <i class="bi bi-laptop"></i>
                                     </div>
                                 </div>
-                                <h3 class="timeline-title">Estagiário em Programação Fullstack</h3>
+                                <h3 class="timeline-title">Estagiário Desenvolvedor Fullstack</h3>
                                 <h4 class="timeline-company">VA Sistemas</h4>
                                 <p class="timeline-description">
                                     Desenvolvimento de um sistema inovador de banco de preços para cotações públicas, 
-                                    proporcionando transparência e eficiência nos processos licitatórios. Trabalho com 
-                                    tecnologias modernas para criar soluções robustas e escaláveis.
+                                    proporcionando transparência e eficiência nos processos licitatórios.
                                 </p>
                                 <div class="timeline-tech">
+                                    <span class="tech-tag">PHP</span>
                                     <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">Blade</span>
                                     <span class="tech-tag">Tailwind CSS</span>
                                     <span class="tech-tag">JavaScript</span>
                                     <span class="tech-tag">MySQL</span>
