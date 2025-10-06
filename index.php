@@ -210,7 +210,7 @@
                     
                     <div class="about-text slide-left">
                         <p>
-                            Sou um desenvolvedor web apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. 
+                            Sou um desenvolvedor apaixonado por criar soluções inovadoras que facilitam a vida das pessoas. 
                             Com experiência em frameworks modernos, design responsivo e IA, busco constantemente aprimorar minhas 
                             habilidades e acompanhar as tendências tecnológicas.
                         </p>
@@ -261,14 +261,15 @@
                 </div>
                 
                 <div class="work-timeline">
+                    <!-- Estágio: Jun 2024 - Set 2025 -->
                     <div class="timeline-item slide-up">
                         <div class="timeline-side">
                             <div class="timeline-vertical">
                                 <span class="date-badge timeline-start">Jun 2024</span>
                                 <span class="timeline-line timeline-line-top"></span>
                                 <span class="timeline-line timeline-line-bottom"></span>
-                                <span class="timeline-dot"></span>
-                                <span class="date-badge timeline-end">ATUAL</span>
+                                <!-- <span class="timeline-dot"></span> -->
+                                <span class="date-badge timeline-end">Set 2025</span>
                             </div>
                         </div>
                         <div class="timeline-content">
@@ -281,8 +282,46 @@
                                 <h3 class="timeline-title">Estagiário Desenvolvedor Fullstack</h3>
                                 <h4 class="timeline-company">VA Sistemas</h4>
                                 <p class="timeline-description">
-                                    Desenvolvimento de um sistema inovador de banco de preços para cotações públicas, 
-                                    proporcionando transparência e eficiência nos processos licitatórios.
+                                    Desenvolvi um sistema de banco de preços para cotações públicas, 
+                                    entregando funcionalidades que aumentaram a transparência e eficiência nos processos.
+                                </p>
+                                <div class="timeline-tech">
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">Laravel</span>
+                                    <span class="tech-tag">Blade</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">APIs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Promoção: Desenvolvedor Júnior a partir de 01/10/2025 -->
+                    <div class="timeline-item slide-up">
+                        <div class="timeline-side">
+                            <div class="timeline-vertical">
+                                <span class="date-badge timeline-start">Out 2025</span>
+                                <span class="timeline-line timeline-line-top"></span>
+                                <span class="timeline-line timeline-line-bottom"></span>
+                                <span class="timeline-dot"></span>
+                                <span class="date-badge timeline-end">ATUAL</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-info">
+                                <div class="timeline-header">
+                                    <div class="timeline-icon">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div>
+                                </div>
+                                <h3 class="timeline-title">Desenvolvedor Júnior</h3>
+                                <h4 class="timeline-company">VA Sistemas</h4>
+                                <p class="timeline-description">
+                                    Promovido a Desenvolvedor Júnior. Continuo atuando nas mesmas tecnologias,
+                                    com responsabilidades ampliadas no desenvolvimento de features, manutenção de código e
+                                    integração de APIs para o produto Cesta de Preços VA.
                                 </p>
                                 <div class="timeline-tech">
                                     <span class="tech-tag">PHP</span>
